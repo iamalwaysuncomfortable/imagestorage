@@ -2,7 +2,6 @@
 # CIRCUIT
 --------------------------------
 
-
 Boolean::and            time:   [3.0867 µs 3.6225 µs 3.9723 µs]
                         change: [-9.7451% +2.0524% +15.953%] (p = 0.77 > 0.05)
                         No change in performance detected.
@@ -435,13 +434,11 @@ Variable MSM on Edwards-BLS12 (1000000)
 Found 1 outliers among 10 measurements (10.00%)
   1 (10.00%) high mild
 
-
 --------------------------------
 # SYNTHESIZER
 --------------------------------
 
-
-                        time:   [7.0849 µs 7.1193 µs 7.1521 µs]
+Block::to_bytes_le    time:   [7.0849 µs 7.1193 µs 7.1521 µs]
 Found 2 outliers among 10 measurements (20.00%)
   1 (10.00%) high mild
   1 (10.00%) high severe
@@ -568,11 +565,9 @@ Transition::deserialize (bincode)
 Transition::from_str (serde_json)
                         time:   [1.9810 ms 1.9890 ms 2.0029 ms]
 
-
 --------------------------------
 # CURVES
 --------------------------------
-
 
 bls12_377: g1_rand      time:   [108.13 µs 108.55 µs 109.12 µs]
 Found 7 outliers among 100 measurements (7.00%)
@@ -870,11 +865,9 @@ Found 13 outliers among 100 measurements (13.00%)
   12 (12.00%) high mild
   1 (1.00%) high severe
 
-
 --------------------------------
 # CONSOLE
 --------------------------------
-
 
 Poseidon2 Hash 4 -> 1   time:   [40.915 µs 40.982 µs 41.057 µs]
 
