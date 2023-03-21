@@ -1,0 +1,984 @@
+--------------------------------
+# CIRCUIT
+--------------------------------
+
+Boolean::and            time:   [3.0271 µs 3.4801 µs 3.7491 µs]
+                        change: [-17.308% -0.4750% +22.063%] (p = 0.97 > 0.05)
+                        No change in performance detected.
+
+Boolean::and_assign     time:   [5.3520 µs 6.0383 µs 6.4784 µs]
+                        change: [+30.950% +43.968% +58.990%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+
+LinearCombination::add  time:   [2.4059 ms 2.5574 ms 2.7608 ms]
+                        change: [-43.959% -38.527% -31.854%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+LinearCombination::add_assign
+                        time:   [210.09 µs 210.97 µs 211.73 µs]
+                        change: [-53.643% -47.370% -39.626%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+Benchmarking to_value: AnalyzingCriterion.rs ERROR: At least one measurement of benchmark to_value took zero time per iteration. This should not be possible. If using iter_custom, please verify that your routine is correctly measured.
+
+debug                   time:   [422.99 ms 424.25 ms 425.71 ms]
+                        change: [-66.945% -59.600% -47.914%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+--------------------------------
+# ALGORITHMS
+--------------------------------
+
+"BLS12-377 - radix-2" - subgroup_fft_in_place/32768
+                        time:   [16.645 ms 21.798 ms 28.008 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+"BLS12-377 - radix-2" - subgroup_fft_in_place/65536
+                        time:   [6.9238 ms 7.0661 ms 7.2258 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+"BLS12-377 - radix-2" - subgroup_fft_in_place/131072
+                        time:   [10.854 ms 11.039 ms 11.230 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+"BLS12-377 - radix-2" - subgroup_fft_in_place/262144
+                        time:   [17.448 ms 17.823 ms 18.214 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+"BLS12-377 - radix-2" - subgroup_fft_in_place/524288
+                        time:   [31.117 ms 31.693 ms 32.373 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+Benchmarking "BLS12-377 - radix-2" - subgroup_fft_in_place/1048576: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.7s, or reduce sample count to 80.
+"BLS12-377 - radix-2" - subgroup_fft_in_place/1048576
+                        time:   [58.176 ms 59.754 ms 61.840 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+Benchmarking "BLS12-377 - radix-2" - subgroup_fft_in_place/2097152: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 11.3s, or reduce sample count to 40.
+"BLS12-377 - radix-2" - subgroup_fft_in_place/2097152
+                        time:   [113.31 ms 114.44 ms 115.65 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  7 (7.00%) high mild
+Benchmarking "BLS12-377 - radix-2" - subgroup_fft_in_place/4194304: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 23.2s, or reduce sample count to 20.
+"BLS12-377 - radix-2" - subgroup_fft_in_place/4194304
+                        time:   [232.07 ms 234.75 ms 237.81 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/32768
+                        time:   [5.0076 ms 5.3983 ms 6.0731 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/65536
+                        time:   [6.7984 ms 6.9195 ms 7.0394 ms]
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/131072
+                        time:   [11.293 ms 11.595 ms 11.954 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/262144
+                        time:   [19.833 ms 20.164 ms 20.498 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/524288
+                        time:   [35.558 ms 35.947 ms 36.338 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+Benchmarking "BLS12-377 - radix-2" - subgroup_ifft_in_place/1048576: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.6s, or reduce sample count to 70.
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/1048576
+                        time:   [64.192 ms 64.853 ms 65.521 ms]
+Benchmarking "BLS12-377 - radix-2" - subgroup_ifft_in_place/2097152: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.7s, or reduce sample count to 30.
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/2097152
+                        time:   [127.48 ms 129.50 ms 131.99 ms]
+Found 12 outliers among 100 measurements (12.00%)
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  6 (6.00%) high severe
+Benchmarking "BLS12-377 - radix-2" - subgroup_ifft_in_place/4194304: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 26.3s, or reduce sample count to 10.
+"BLS12-377 - radix-2" - subgroup_ifft_in_place/4194304
+                        time:   [266.13 ms 274.00 ms 282.94 ms]
+Found 17 outliers among 100 measurements (17.00%)
+  6 (6.00%) high mild
+  11 (11.00%) high severe
+
+"BLS12-377 - radix-2" - coset_fft_in_place/32768
+                        time:   [5.9936 ms 6.5368 ms 7.3635 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+"BLS12-377 - radix-2" - coset_fft_in_place/65536
+                        time:   [9.1592 ms 10.011 ms 11.266 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+"BLS12-377 - radix-2" - coset_fft_in_place/131072
+                        time:   [13.863 ms 14.185 ms 14.569 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+"BLS12-377 - radix-2" - coset_fft_in_place/262144
+                        time:   [21.655 ms 22.254 ms 22.869 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+"BLS12-377 - radix-2" - coset_fft_in_place/524288
+                        time:   [36.048 ms 36.709 ms 37.407 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+Benchmarking "BLS12-377 - radix-2" - coset_fft_in_place/1048576: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.7s, or reduce sample count to 70.
+"BLS12-377 - radix-2" - coset_fft_in_place/1048576
+                        time:   [64.155 ms 64.970 ms 65.855 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+Benchmarking "BLS12-377 - radix-2" - coset_fft_in_place/2097152: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.5s, or reduce sample count to 40.
+"BLS12-377 - radix-2" - coset_fft_in_place/2097152
+                        time:   [126.47 ms 128.17 ms 129.96 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+Benchmarking "BLS12-377 - radix-2" - coset_fft_in_place/4194304: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 25.2s, or reduce sample count to 10.
+"BLS12-377 - radix-2" - coset_fft_in_place/4194304
+                        time:   [249.12 ms 250.28 ms 251.51 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+
+"BLS12-377 - radix-2" - coset_ifft_in_place/32768
+                        time:   [5.1432 ms 5.2239 ms 5.3059 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+"BLS12-377 - radix-2" - coset_ifft_in_place/65536
+                        time:   [7.1419 ms 7.9338 ms 9.0723 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+"BLS12-377 - radix-2" - coset_ifft_in_place/131072
+                        time:   [12.421 ms 12.891 ms 13.387 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+"BLS12-377 - radix-2" - coset_ifft_in_place/262144
+                        time:   [21.204 ms 22.080 ms 23.059 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  2 (2.00%) high mild
+  7 (7.00%) high severe
+"BLS12-377 - radix-2" - coset_ifft_in_place/524288
+                        time:   [37.910 ms 38.499 ms 39.092 ms]
+Benchmarking "BLS12-377 - radix-2" - coset_ifft_in_place/1048576: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.9s, or reduce sample count to 70.
+"BLS12-377 - radix-2" - coset_ifft_in_place/1048576
+                        time:   [67.411 ms 68.086 ms 68.780 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+Benchmarking "BLS12-377 - radix-2" - coset_ifft_in_place/2097152: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 13.4s, or reduce sample count to 30.
+"BLS12-377 - radix-2" - coset_ifft_in_place/2097152
+                        time:   [132.41 ms 133.23 ms 134.11 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+Benchmarking "BLS12-377 - radix-2" - coset_ifft_in_place/4194304: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 26.3s, or reduce sample count to 10.
+"BLS12-377 - radix-2" - coset_ifft_in_place/4194304
+                        time:   [262.84 ms 263.79 ms 264.77 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+
+
+Benchmarking snark_universal_setup: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 8.5s.
+snark_universal_setup   time:   [845.39 ms 848.09 ms 850.95 ms]
+Found 3 outliers among 10 measurements (30.00%)
+  1 (10.00%) low mild
+  2 (20.00%) high mild
+
+snark_circuit_setup_100 time:   [41.383 ms 41.576 ms 41.777 ms]
+
+snark_circuit_setup_1000
+                        time:   [225.87 ms 227.01 ms 228.05 ms]
+
+Benchmarking snark_circuit_setup_10000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 16.8s.
+snark_circuit_setup_10000
+                        time:   [1.6205 s 1.6543 s 1.6932 s]
+
+snark_prove             time:   [27.375 ms 27.521 ms 27.725 ms]
+
+snark_verify            time:   [6.0573 ms 6.0895 ms 6.1128 ms]
+
+snark_certificate_prove_100
+                        time:   [3.4576 ms 3.4827 ms 3.5061 ms]
+
+snark_certificate_prove_1000
+                        time:   [6.5044 ms 6.5580 ms 6.6189 ms]
+Found 3 outliers among 10 measurements (30.00%)
+  2 (20.00%) low mild
+  1 (10.00%) high mild
+
+snark_certificate_prove_10000
+                        time:   [27.200 ms 27.382 ms 27.557 ms]
+
+Benchmarking snark_certificate_prove_100000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 8.5s or enable flat sampling.
+snark_certificate_prove_100000
+                        time:   [154.93 ms 156.20 ms 157.50 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+snark_certificate_verify_100
+                        time:   [4.8869 ms 4.9193 ms 4.9586 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low severe
+  1 (10.00%) high severe
+
+snark_certificate_verify_1000
+                        time:   [6.4101 ms 6.4301 ms 6.4462 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+snark_certificate_verify_10000
+                        time:   [17.252 ms 17.384 ms 17.516 ms]
+
+Benchmarking snark_certificate_verify_100000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.4s or enable flat sampling.
+snark_certificate_verify_100000
+                        time:   [101.45 ms 102.09 ms 102.81 ms]
+
+     Running benches/crypto_hash/poseidon.rs 
+PoseidonSponge<2, 1> Absorb 4
+                        time:   [48.701 µs 48.726 µs 48.755 µs]
+Found 3 outliers among 50 measurements (6.00%)
+  2 (4.00%) high mild
+  1 (2.00%) high severe
+
+PoseidonSponge<2, 1> Absorb 10 
+                        time:   [120.22 µs 120.40 µs 120.60 µs]
+Found 1 outliers among 50 measurements (2.00%)
+  1 (2.00%) high mild
+
+     Running benches/msm/variable_base.rs 
+VariableBase MSM on BLS12-377 (10000)
+                        time:   [16.510 ms 16.643 ms 16.764 ms]
+
+Benchmarking VariableBase MSM on BLS12-377 (100000): Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 6.1s or enable flat sampling.
+VariableBase MSM on BLS12-377 (100000)
+                        time:   [115.61 ms 116.30 ms 117.12 ms]
+
+VariableBase MSM on BLS12-377 (200000)
+                        time:   [215.27 ms 215.94 ms 216.61 ms]
+
+VariableBase MSM on BLS12-377 (300000)
+                        time:   [328.26 ms 330.74 ms 333.45 ms]
+
+VariableBase MSM on BLS12-377 (400000)
+                        time:   [412.94 ms 414.90 ms 416.98 ms]
+
+Benchmarking VariableBase MSM on BLS12-377 (500000): Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.0s.
+VariableBase MSM on BLS12-377 (500000)
+                        time:   [505.55 ms 517.14 ms 536.10 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Benchmarking VariableBase MSM on BLS12-377 (1000000): Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 9.9s.
+VariableBase MSM on BLS12-377 (1000000)
+                        time:   [958.28 ms 962.37 ms 967.07 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking VariableBase MSM on BLS12-377 (2000000): Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 19.2s.
+VariableBase MSM on BLS12-377 (2000000)
+                        time:   [1.9182 s 1.9229 s 1.9288 s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Variable MSM on Edwards-BLS12 (10000)
+                        time:   [10.398 ms 10.535 ms 10.687 ms]
+
+Variable MSM on Edwards-BLS12 (100000)
+                        time:   [69.650 ms 70.234 ms 70.843 ms]
+
+Benchmarking Variable MSM on Edwards-BLS12 (1000000): Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.8s.
+Variable MSM on Edwards-BLS12 (1000000)
+                        time:   [572.49 ms 579.16 ms 587.49 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+--------------------------------
+# SYNTHESIZER
+--------------------------------
+
+Block::to_bytes_le      time:   [3.4723 µs 3.4737 µs 3.4755 µs]
+Found 3 outliers among 10 measurements (30.00%)
+  1 (10.00%) low mild
+  2 (20.00%) high mild
+
+Block::serialize (bincode)
+                        time:   [7.0257 µs 7.0365 µs 7.0558 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Block::to_string (serde_json)
+                        time:   [27.438 µs 27.462 µs 27.520 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Block::from_bytes_le    time:   [3.7461 ms 3.7488 ms 3.7533 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Block::deserialize (bincode)
+                        time:   [3.7404 ms 3.7485 ms 3.7560 ms]
+
+Block::from_str (serde_json)
+                        time:   [3.8479 ms 3.8513 ms 3.8552 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Header::to_bytes_le     time:   [205.71 ns 205.92 ns 206.13 ns]
+
+Header::serialize (bincode)
+                        time:   [437.83 ns 438.26 ns 438.78 ns]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Header::to_string (serde_json)
+                        time:   [1.1867 µs 1.1878 µs 1.1891 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+Header::from_bytes_le   time:   [53.767 ns 53.811 ns 53.908 ns]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Header::deserialize (bincode)
+                        time:   [134.62 ns 134.75 ns 134.90 ns]
+Found 3 outliers among 10 measurements (30.00%)
+  1 (10.00%) low mild
+  2 (20.00%) high mild
+
+Header::from_str (serde_json)
+                        time:   [10.770 µs 10.777 µs 10.783 µs]
+
+Transactions::to_bytes_le
+                        time:   [3.2953 µs 3.3040 µs 3.3204 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Transactions::serialize (bincode)
+                        time:   [6.6623 µs 6.6665 µs 6.6702 µs]
+
+Transactions::to_string (serde_json)
+                        time:   [22.450 µs 22.495 µs 22.561 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Transactions::from_bytes_le
+                        time:   [2.2229 ms 2.2246 ms 2.2271 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transactions::deserialize (bincode)
+                        time:   [2.2227 ms 2.2250 ms 2.2290 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transactions::from_str (serde_json)
+                        time:   [2.3124 ms 2.3149 ms 2.3199 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Transaction::to_bytes_le
+                        time:   [3.2814 µs 3.2834 µs 3.2849 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Transaction::serialize (bincode)
+                        time:   [6.6073 µs 6.6166 µs 6.6287 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Transaction::to_string (serde_json)
+                        time:   [22.514 µs 22.521 µs 22.528 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transaction::from_bytes_le
+                        time:   [2.2217 ms 2.2257 ms 2.2317 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transaction::deserialize (bincode)
+                        time:   [2.2240 ms 2.2249 ms 2.2257 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Transaction::from_str (serde_json)
+                        time:   [2.3125 ms 2.3170 ms 2.3217 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+Transition::to_bytes_le time:   [3.2174 µs 3.2199 µs 3.2215 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Transition::serialize (bincode)
+                        time:   [6.4928 µs 6.4959 µs 6.4981 µs]
+
+Transition::to_string (serde_json)
+                        time:   [21.012 µs 21.022 µs 21.035 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transition::from_bytes_le
+                        time:   [1.8857 ms 1.8893 ms 1.8980 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+Transition::deserialize (bincode)
+                        time:   [1.8866 ms 1.8879 ms 1.8904 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Transition::from_str (serde_json)
+                        time:   [1.9647 ms 1.9660 ms 1.9676 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+--------------------------------
+# CURVES
+--------------------------------
+
+bls12_377: g1_rand      time:   [107.60 µs 107.94 µs 108.36 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: g1_mul_assign
+                        time:   [131.61 µs 131.89 µs 132.18 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low severe
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: g1_add_assign
+                        time:   [601.98 ns 602.85 ns 604.25 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: g1_add_assign_mixed
+                        time:   [435.96 ns 436.52 ns 437.09 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+
+bls12_377: g1_double    time:   [288.94 ns 289.93 ns 291.39 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: g1_is_in_correct_subgroup
+                        time:   [50.038 µs 50.081 µs 50.140 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking bls12_377: g2_rand: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.3s, enable flat sampling, or reduce sample count to 60.
+bls12_377: g2_rand      time:   [1.0417 ms 1.0425 ms 1.0433 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) low mild
+  4 (4.00%) high mild
+
+bls12_377: g2_mul_assign
+                        time:   [342.45 µs 342.98 µs 343.61 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: g2_add_assign
+                        time:   [2.2562 µs 2.2591 µs 2.2639 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  6 (6.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: g2_add_assign_mixed
+                        time:   [1.6197 µs 1.6207 µs 1.6218 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: g2_double    time:   [1.1231 µs 1.1244 µs 1.1258 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+
+bls12_377: fq_repr_add_nocarry
+                        time:   [3.4646 ns 3.4683 ns 3.4721 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) low mild
+  2 (2.00%) high severe
+
+bls12_377: fq_repr_sub_noborrow
+                        time:   [3.9082 ns 3.9119 ns 3.9165 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: fq_repr_num_bits
+                        time:   [2.9709 ns 2.9773 ns 2.9893 ns]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+
+bls12_377: fq_repr_mul2 time:   [3.2746 ns 3.2772 ns 3.2799 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fq_repr_div2 time:   [3.5428 ns 3.5451 ns 3.5475 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fq_add_assign
+                        time:   [4.4530 ns 4.4720 ns 4.4915 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: fq_sub_assign
+                        time:   [4.6061 ns 4.6123 ns 4.6197 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+
+bls12_377: fq_mul_assign
+                        time:   [37.681 ns 40.100 ns 43.279 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) high mild
+  10 (10.00%) high severe
+
+bls12_377: fq_double    time:   [3.9199 ns 3.9214 ns 3.9227 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  3 (3.00%) low mild
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+
+bls12_377: fq_square    time:   [32.645 ns 32.689 ns 32.750 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  7 (7.00%) high severe
+
+bls12_377: fq_inverse   time:   [8.1008 µs 8.1162 µs 8.1410 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) low mild
+  4 (4.00%) high severe
+
+bls12_377: fq_negate    time:   [7.3905 ns 7.4653 ns 7.5450 ns]
+
+bls12_377: fq_sqrt      time:   [44.623 µs 44.638 µs 44.653 µs]
+Found 12 outliers among 100 measurements (12.00%)
+  2 (2.00%) low severe
+  5 (5.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fq_to_bigint time:   [21.468 ns 21.475 ns 21.481 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) low mild
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fq_from_bigint
+                        time:   [35.919 ns 35.926 ns 35.933 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) low severe
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fq12_add_assign
+                        time:   [129.55 ns 129.84 ns 130.18 ns]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+
+bls12_377: fq12_sub_assign
+                        time:   [89.425 ns 89.777 ns 90.186 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+
+bls12_377: fq12_mul_assign
+                        time:   [3.4099 µs 3.4109 µs 3.4120 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  5 (5.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fq12_double  time:   [107.04 ns 107.92 ns 108.94 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+
+bls12_377: fq12_square  time:   [2.3548 µs 2.3559 µs 2.3571 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  3 (3.00%) low mild
+  5 (5.00%) high mild
+
+bls12_377: fq12_inverse time:   [14.101 µs 14.106 µs 14.112 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  3 (3.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fq2_add_assign
+                        time:   [9.4121 ns 9.4202 ns 9.4278 ns]
+Found 26 outliers among 100 measurements (26.00%)
+  2 (2.00%) low severe
+  5 (5.00%) low mild
+  3 (3.00%) high mild
+  16 (16.00%) high severe
+
+bls12_377: fq2_sub_assign
+                        time:   [9.0822 ns 9.0924 ns 9.1049 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+
+bls12_377: fq2_mul_assign
+                        time:   [124.25 ns 124.29 ns 124.32 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) low severe
+  3 (3.00%) low mild
+  1 (1.00%) high severe
+
+bls12_377: fq2_double   time:   [7.5848 ns 7.6017 ns 7.6195 ns]
+
+bls12_377: fq2_square   time:   [108.08 ns 108.96 ns 109.84 ns]
+Found 15 outliers among 100 measurements (15.00%)
+  11 (11.00%) high mild
+  4 (4.00%) high severe
+
+bls12_377: fq2_inverse  time:   [8.3041 µs 8.3086 µs 8.3135 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) low severe
+  4 (4.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fq2_sqrt     time:   [71.891 µs 72.170 µs 72.438 µs]
+Found 14 outliers among 100 measurements (14.00%)
+  1 (1.00%) low severe
+  6 (6.00%) low mild
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: fr_repr_add_nocarry
+                        time:   [2.8833 ns 2.8858 ns 2.8882 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) low mild
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_repr_sub_noborrow
+                        time:   [2.9482 ns 2.9498 ns 2.9520 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low severe
+  4 (4.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fr_repr_num_bits
+                        time:   [3.2020 ns 3.2047 ns 3.2080 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+bls12_377: fr_repr_mul2 time:   [2.9495 ns 2.9545 ns 2.9587 ns]
+
+bls12_377: fr_repr_div2 time:   [3.0373 ns 3.0391 ns 3.0409 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low severe
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_add_assign
+                        time:   [3.2429 ns 3.2531 ns 3.2670 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  10 (10.00%) low mild
+  2 (2.00%) high severe
+
+bls12_377: fr_sub_assign
+                        time:   [3.0238 ns 3.0276 ns 3.0319 ns]
+Found 16 outliers among 100 measurements (16.00%)
+  13 (13.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: fr_mul_assign
+                        time:   [17.047 ns 17.060 ns 17.073 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_double    time:   [3.4645 ns 3.4657 ns 3.4667 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  1 (1.00%) low severe
+  7 (7.00%) low mild
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_square    time:   [16.106 ns 16.109 ns 16.113 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  2 (2.00%) low severe
+  7 (7.00%) low mild
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_inverse   time:   [3.1277 µs 3.1313 µs 3.1352 µs]
+
+bls12_377: fr_negate    time:   [2.9325 ns 2.9346 ns 2.9376 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fr_sqrt      time:   [20.456 µs 20.465 µs 20.475 µs]
+Found 13 outliers among 100 measurements (13.00%)
+  2 (2.00%) low severe
+  5 (5.00%) low mild
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: fr_to_bigint time:   [10.413 ns 10.422 ns 10.430 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  8 (8.00%) low severe
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+
+bls12_377: fr_from_bigint
+                        time:   [17.275 ns 17.281 ns 17.289 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) low severe
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+bls12_377: pairing_miller_loop
+                        time:   [311.50 µs 311.59 µs 311.68 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+bls12_377: pairing_final_exponentiation
+                        time:   [642.17 µs 642.36 µs 642.54 µs]
+Found 21 outliers among 100 measurements (21.00%)
+  16 (16.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+--------------------------------
+# CONSOLE
+--------------------------------
+
+Poseidon2 Hash 4 -> 1   time:   [40.911 µs 40.949 µs 40.978 µs]
+
+Poseidon2 Hash 4 -> 2   time:   [41.016 µs 41.035 µs 41.055 µs]
+Found 2 outliers among 50 measurements (4.00%)
+  1 (2.00%) low severe
+  1 (2.00%) high severe
+
+Poseidon2 Hash 10 -> 1  time:   [82.035 µs 82.139 µs 82.240 µs]
+Found 9 outliers among 50 measurements (18.00%)
+  5 (10.00%) low severe
+  3 (6.00%) low mild
+  1 (2.00%) high severe
+
+Poseidon2 Hash 10 -> 4  time:   [95.648 µs 95.665 µs 95.681 µs]
+Found 4 outliers among 50 measurements (8.00%)
+  2 (4.00%) low severe
+  2 (4.00%) high mild
+
+Poseidon2 Hash 10 -> 8  time:   [123.03 µs 123.08 µs 123.13 µs]
+Found 6 outliers among 50 measurements (12.00%)
+  1 (2.00%) low severe
+  2 (4.00%) low mild
+  1 (2.00%) high mild
+  2 (4.00%) high severe
+
+Poseidon4 Hash 4 -> 1   time:   [46.625 µs 46.641 µs 46.658 µs]
+Found 8 outliers among 50 measurements (16.00%)
+  1 (2.00%) low severe
+  3 (6.00%) low mild
+  3 (6.00%) high mild
+  1 (2.00%) high severe
+
+Poseidon4 Hash 4 -> 2   time:   [46.587 µs 46.615 µs 46.653 µs]
+Found 5 outliers among 50 measurements (10.00%)
+  3 (6.00%) high mild
+  2 (4.00%) high severe
+
+Poseidon4 Hash 10 -> 1  time:   [93.452 µs 93.480 µs 93.511 µs]
+Found 4 outliers among 50 measurements (8.00%)
+  2 (4.00%) low severe
+  2 (4.00%) high mild
+
+Poseidon4 Hash 10 -> 4  time:   [93.277 µs 93.312 µs 93.349 µs]
+Found 5 outliers among 50 measurements (10.00%)
+  1 (2.00%) low severe
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+
+Poseidon4 Hash 10 -> 8  time:   [116.52 µs 116.65 µs 116.78 µs]
+Found 6 outliers among 50 measurements (12.00%)
+  1 (2.00%) low severe
+  3 (6.00%) low mild
+  2 (4.00%) high mild
+
+Poseidon8 Hash 4 -> 1   time:   [100.06 µs 100.08 µs 100.10 µs]
+Found 4 outliers among 50 measurements (8.00%)
+  2 (4.00%) low severe
+  1 (2.00%) low mild
+  1 (2.00%) high mild
+
+Poseidon8 Hash 4 -> 2   time:   [100.08 µs 100.11 µs 100.15 µs]
+Found 5 outliers among 50 measurements (10.00%)
+  1 (2.00%) low severe
+  2 (4.00%) low mild
+  1 (2.00%) high mild
+  1 (2.00%) high severe
+
+Poseidon8 Hash 10 -> 1  time:   [150.45 µs 150.48 µs 150.51 µs]
+Found 1 outliers among 50 measurements (2.00%)
+  1 (2.00%) high severe
+
+Poseidon8 Hash 10 -> 4  time:   [150.55 µs 150.58 µs 150.62 µs]
+Found 4 outliers among 50 measurements (8.00%)
+  2 (4.00%) high mild
+  2 (4.00%) high severe
+
+Poseidon8 Hash 10 -> 8  time:   [150.49 µs 150.53 µs 150.57 µs]
+Found 4 outliers among 50 measurements (8.00%)
+  1 (2.00%) low mild
+  2 (4.00%) high mild
+  1 (2.00%) high severe
+
+account_private_key     time:   [55.405 µs 55.429 µs 55.451 µs]
+
+account_view_key        time:   [100.44 µs 101.39 µs 102.26 µs]
+
+account_address         time:   [126.37 µs 127.86 µs 129.48 µs]
+Found 2 outliers among 20 measurements (10.00%)
+  1 (5.00%) low mild
+  1 (5.00%) high mild
+
+
+MerkleTree::new (10 leaves)
+                        time:   [2.9526 ms 2.9591 ms 2.9656 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+MerkleTree::new (100 leaves)
+                        time:   [12.787 ms 12.840 ms 12.935 ms]
+
+MerkleTree::new (1000 leaves)
+                        time:   [23.814 ms 23.853 ms 23.905 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+MerkleTree::new (10000 leaves)
+                        time:   [182.58 ms 183.43 ms 184.39 ms]
+
+MerkleTree::append (adding single leaf to a tree with 10 leaves)
+                        time:   [1.9133 ms 1.9164 ms 1.9193 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+MerkleTree::append (adding 10 new leaves to a tree with 10 leaves)
+                        time:   [3.3147 ms 3.3189 ms 3.3227 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low severe
+  1 (10.00%) high mild
+
+MerkleTree::append (adding 100 new leaves to a tree with 10 leaves)
+                        time:   [12.344 ms 12.435 ms 12.486 ms]
+
+MerkleTree::append (adding 1000 new leaves to a tree with 10 leaves)
+                        time:   [23.233 ms 23.370 ms 23.508 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+MerkleTree::append (adding single leaf to a tree with 100 leaves)
+                        time:   [1.8880 ms 1.8995 ms 1.9088 ms]
+
+MerkleTree::append (adding 10 new leaves to a tree with 100 leaves)
+                        time:   [2.6364 ms 2.6477 ms 2.6555 ms]
+
+MerkleTree::append (adding 100 new leaves to a tree with 100 leaves)
+                        time:   [14.368 ms 14.372 ms 14.377 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+MerkleTree::append (adding 1000 new leaves to a tree with 100 leaves)
+                        time:   [30.334 ms 30.583 ms 30.892 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+MerkleTree::append (adding single leaf to a tree with 1000 leaves)
+                        time:   [1.8930 ms 1.8974 ms 1.9062 ms]
+
+MerkleTree::append (adding 10 new leaves to a tree with 1000 leaves)
+                        time:   [2.7214 ms 2.7332 ms 2.7501 ms]
+
+MerkleTree::append (adding 100 new leaves to a tree with 1000 leaves)
+                        time:   [21.110 ms 21.375 ms 21.727 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+MerkleTree::append (adding 1000 new leaves to a tree with 1000 leaves)
+                        time:   [24.223 ms 24.378 ms 24.479 ms]
+
+MerkleTree::append (adding single leaf to a tree with 10000 leaves)
+                        time:   [1.9700 ms 2.0105 ms 2.0355 ms]
+
+MerkleTree::append (adding 10 new leaves to a tree with 10000 leaves)
+                        time:   [2.7247 ms 2.7363 ms 2.7486 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+MerkleTree::append (adding 100 new leaves to a tree with 10000 leaves)
+                        time:   [11.441 ms 11.462 ms 11.478 ms]
+
+MerkleTree::append (adding 1000 new leaves to a tree with 10000 leaves)
+                        time:   [23.492 ms 23.591 ms 23.797 ms]
+
+----------------------------------------
