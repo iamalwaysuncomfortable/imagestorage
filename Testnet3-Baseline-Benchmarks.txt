@@ -1,6 +1,8 @@
-# Testnet3 Benchmarks - Mac OSX M1 64gb ram
+--------------------------------
+# CIRCUIT
+--------------------------------
 
-## Circuit
+
 Boolean::and            time:   [3.0867 µs 3.6225 µs 3.9723 µs]
                         change: [-9.7451% +2.0524% +15.953%] (p = 0.77 > 0.05)
                         No change in performance detected.
@@ -31,7 +33,11 @@ debug                   time:   [425.88 ms 429.01 ms 433.15 ms]
 Found 1 outliers among 10 measurements (10.00%)
   1 (10.00%) high severe
 
-## Algorithms
+
+--------------------------------
+# ALGORITHMS
+--------------------------------
+
 
      Running benches/fft/fft.rs (/Users/privacydaddy/dev/snarkVM/target/release/deps/fft-65be81553947c3bd)
 "BLS12-377 - radix-2" - subgroup_fft_in_place/32768
@@ -429,7 +435,11 @@ Variable MSM on Edwards-BLS12 (1000000)
 Found 1 outliers among 10 measurements (10.00%)
   1 (10.00%) high mild
 
-## Synthesizer
+
+--------------------------------
+# SYNTHESIZER
+--------------------------------
+
 
                         time:   [7.0849 µs 7.1193 µs 7.1521 µs]
 Found 2 outliers among 10 measurements (20.00%)
@@ -558,7 +568,11 @@ Transition::deserialize (bincode)
 Transition::from_str (serde_json)
                         time:   [1.9810 ms 1.9890 ms 2.0029 ms]
 
-## Curves
+
+--------------------------------
+# CURVES
+--------------------------------
+
 
 bls12_377: g1_rand      time:   [108.13 µs 108.55 µs 109.12 µs]
 Found 7 outliers among 100 measurements (7.00%)
@@ -856,7 +870,11 @@ Found 13 outliers among 100 measurements (13.00%)
   12 (12.00%) high mild
   1 (1.00%) high severe
 
-## Console
+
+--------------------------------
+# CONSOLE
+--------------------------------
+
 
 Poseidon2 Hash 4 -> 1   time:   [40.915 µs 40.982 µs 41.057 µs]
 
