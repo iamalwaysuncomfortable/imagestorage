@@ -1,0 +1,982 @@
+./snarktests.sh
+
+Running 'cargo test --features serial' in ./algorithms
+
+running 79 tests
+test fft::domain::tests::systematic_lagrange_coefficients_test ... ok
+test fft::domain::tests::size_of_elements ... ok
+test fft::domain::tests::elements_contents ... ok
+test crypto_hash::tests::test_grain_lfsr_consistency ... ok
+test fft::domain::tests::test_roots_of_unity ... ok
+test fft::domain::tests::vanishing_polynomial_evaluation ... ok
+test crypto_hash::tests::test_poseidon_sponge_consistency ... ok
+test fft::polynomial::dense::tests::divide_polynomials_fixed ... ok
+test fft::polynomial::dense::tests::add_polynomials ... ok
+test fft::polynomial::dense::tests::double_polynomials_random ... ok
+test fft::polynomial::dense::tests::evaluate_polynomials ... ok
+test fft::polynomial::dense::tests::add_polynomials_with_mul ... ok
+test fft::domain::tests::test_fft_precomputation ... ok
+test crypto_hash::tests::bls12_377_fr_poseidon_default_parameters_test ... ok
+test fft::domain::tests::test_ifft_precomputation ... ok
+test fft::polynomial::dense::tests::sub_polynomials ... ok
+test fft::polynomial::dense::tests::mul_polynomials_corner_cases ... ok
+test fft::tests::elements_contents ... ok
+test fft::domain::tests::test_ifft_precomputation_from_fft ... ok
+test fft::domain::tests::test_fft_correctness ... ok
+test fft::domain::tests::non_systematic_lagrange_coefficients_test ... ok
+test fft::tests::size_of_elements ... ok
+test fft::tests::systematic_lagrange_coefficients_test ... ok
+test fft::tests::test_fft_correctness ... ok
+test fft::tests::test_roots_of_unity ... ok
+test fft::tests::vanishing_polynomial_evaluation ... ok
+test fft::tests::non_systematic_lagrange_coefficients_test ... ok
+test fft::polynomial::dense::tests::mul_polynomials_n_random ... ok
+test fft::polynomial::sparse::tests::evaluate_over_domain ... ok
+test fft::domain::tests::vanishing_polynomial_vanishes_on_domain ... ok
+test fft::tests::evaluate_over_domain ... ok
+test polycommit::kzg10::tests::test_degree_is_too_large ... ok
+test fft::tests::vanishing_polynomial_vanishes_on_domain ... ok
+test polycommit::kzg10::tests::test_kzg10_universal_params_serialization ... ok
+test msm::tests::variable_base_test_with_bls12 ... ok
+test polycommit::sonic_pc::tests::test_bad_degree_bound - should panic ... ok
+test polycommit::sonic_pc::tests::test_committer_key_serialization ... ok
+test msm::tests::variable_base_test_with_bls12_unequal_numbers ... ok
+test msm::variable_base::tests::test_msm ... ok
+test polycommit::sonic_pc::tests::test_lagrange_commitment ... ok
+test polycommit::kzg10::tests::test_linear_polynomial ... ok
+test polycommit::kzg10::tests::test_end_to_end ... ok
+test polycommit::kzg10::tests::test_batch_check ... ok
+test polycommit::sonic_pc::tests::test_linear_poly_degree_bound ... ok
+test fft::polynomial::dense::tests::mul_by_vanishing_poly ... ok
+test polycommit::sonic_pc::tests::test_quadratic_poly_degree_bound_multiple_queries ... ok
+test polycommit::sonic_pc::tests::test_single_poly ... ok
+test polycommit::sonic_pc::tests::test_single_equation ... ok
+test polycommit::sonic_pc::tests::test_single_poly_degree_bound ... ok
+test snark::marlin::ahp::ahp::tests::domain_unnormalized_bivariate_lagrange_poly ... ok
+test snark::marlin::ahp::ahp::tests::domain_unnormalized_bivariate_lagrange_poly_diff_inputs ... ok
+test fft::tests::fft_composition ... ok
+test snark::marlin::ahp::ahp::tests::domain_unnormalized_bivariate_lagrange_poly_diff_inputs_over_domain ... ok
+test snark::marlin::ahp::ahp::tests::test_summation ... ok
+test snark::marlin::ahp::matrices::tests::check_arithmetization ... ok
+test snark::marlin::ahp::prover::round_functions::check_division_by_vanishing_poly_preserve_sparseness ... ok
+test polycommit::sonic_pc::tests::test_single_poly_degree_bound_multiple_queries ... ok
+test snark::marlin::ahp::ahp::tests::test_alternator_polynomial ... ok
+test polycommit::sonic_pc::tests::test_two_equation ... ok
+test polycommit::sonic_pc::tests::test_two_equation_degree_bound ... ok
+test polycommit::sonic_pc::tests::test_two_polys_degree_bound_single_query ... ok
+test polycommit::sonic_pc::tests::test_full_end_to_end ... ok
+test snark::marlin::marlin::test::marlin_snark_test ... ok
+test fft::polynomial::dense::tests::divide_polynomials_random ... ok
+test polycommit::sonic_pc::tests::test_full_end_to_end_equation ... ok
+test fft::polynomial::dense::tests::mul_polynomials_random ... ok
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_square_matrix ... ok
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_squat_matrix_big ... ok
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_squat_matrix_small ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_square_matrix has been running for over 60 seconds
+test snark::marlin::tests::marlin::prove_and_verify_with_squat_matrix_big has been running for over 60 seconds
+test snark::marlin::tests::marlin::prove_and_verify_with_squat_matrix_small has been running for over 60 seconds
+test snark::marlin::tests::marlin::prove_and_verify_with_tall_matrix_big has been running for over 60 seconds
+test snark::marlin::tests::marlin::prove_and_verify_with_tall_matrix_small has been running for over 60 seconds
+test snark::marlin::tests::marlin_hiding::check_indexing has been running for over 60 seconds
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_large_matrix has been running for over 60 seconds
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_tall_matrix_big ... ok
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_tall_matrix_small ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_square_matrix ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_squat_matrix_small ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_tall_matrix_small ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_squat_matrix_big ... ok
+test snark::marlin::tests::marlin::prove_and_verify_with_tall_matrix_big ... ok
+test snark::marlin::tests::marlin_hiding::check_indexing ... ok
+test snark::marlin::tests::marlin_hiding::test_srs_downloads has been running for over 60 seconds
+test snark::marlin::tests::marlin_hiding::prove_and_verify_with_large_matrix ... ok
+test snark::marlin::tests::marlin_hiding::test_srs_downloads ... ok
+
+test result: ok. 79 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 826.27s
+
+   Doc-tests snarkvm-algorithms
+
+running 1 test
+test src/fft/domain.rs - fft::domain::log2 (line 52) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.34s
+
+Running 'cargo test --features serial' in ./synthesizer
+
+running 688 tests
+test block::bytes::tests::test_genesis_bytes ... ok
+test block::header::merkle::tests::test_merkle ... ok
+test block::header::genesis::tests::test_genesis_header_size ... ok
+test block::header::metadata::genesis::tests::test_genesis_metadata_size ... ok
+test block::header::metadata::genesis::tests::test_genesis_metadata ... ok
+test block::header::metadata::bytes::tests::test_bytes ... ok
+test block::genesis::tests::test_genesis ... ok
+test block::header::genesis::tests::test_genesis_header ... ok
+test block::header::bytes::tests::test_bytes ... ok
+test block::header::metadata::serialize::tests::test_bincode ... ok
+test block::header::metadata::serialize::tests::test_serde_json ... ok
+test block::header::serialize::tests::test_bincode ... ok
+test block::header::serialize::tests::test_serde_json ... ok
+test block::bytes::tests::test_bytes ... ok
+test block::serialize::tests::test_bincode ... ok
+test block::serialize::tests::test_serde_json ... ok
+test block::serialize::tests::test_genesis_bincode ... ok
+test block::serialize::tests::test_genesis_serde_json ... ok
+test block::transactions::merkle::tests::test_transactions_depth ... ok
+test block::transactions::bytes::tests::test_bytes ... ok
+test block::tests::test_find_transaction_for_transition_id ... ok
+test block::tests::test_find_transition ... ok
+test block::tests::test_find_transition_for_commitment ... ok
+test block::tests::test_find_transaction_for_commitment ... ok
+test block::tests::test_find_record ... ok
+test block::transition::merkle::tests::test_transition_depth ... ok
+test block::transition::bytes::tests::test_bytes ... ok
+test block::transition::input::bytes::tests::test_bytes ... ok
+test block::transition::input::serialize::tests::test_bincode ... ok
+test block::transition::input::serialize::tests::test_serde_json ... ok
+test block::transition::output::bytes::tests::test_bytes ... ok
+test block::transition::output::serialize::tests::test_bincode ... ok
+test block::transition::output::serialize::tests::test_serde_json ... ok
+test block::transition::serialize::tests::test_bincode ... ok
+test coinbase_puzzle::helpers::coinbase_solution::bytes::tests::test_bytes ... ok
+test coinbase_puzzle::helpers::coinbase_solution::serialize::tests::test_bincode ... ok
+test block::transition::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::partial_solution::bytes::tests::test_bytes ... ok
+test coinbase_puzzle::helpers::partial_solution::serialize::tests::test_bincode ... ok
+test coinbase_puzzle::helpers::coinbase_solution::string::tests::test_string ... ok
+test coinbase_puzzle::helpers::partial_solution::string::tests::test_string ... ok
+test coinbase_puzzle::helpers::partial_solution::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::prover_solution::bytes::tests::test_bytes ... ok
+test coinbase_puzzle::helpers::prover_solution::string::tests::test_string ... ok
+test coinbase_puzzle::helpers::prover_solution::serialize::tests::test_bincode ... ok
+test coinbase_puzzle::helpers::puzzle_commitment::bytes::tests::test_bytes ... ok
+test coinbase_puzzle::helpers::puzzle_commitment::serialize::tests::test_bincode ... ok
+test coinbase_puzzle::helpers::puzzle_commitment::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::prover_solution::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::coinbase_solution::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::puzzle_commitment::string::tests::test_display ... ok
+test coinbase_puzzle::helpers::puzzle_commitment::string::tests::test_string ... ok
+test coinbase_puzzle::tests::test_edge_case_for_degree ... ok
+test process::stack::deployment::bytes::tests::test_bytes ... ok
+test process::stack::deployment::serialize::tests::test_bincode ... ok
+test process::stack::deployment::serialize::tests::test_serde_json ... ok
+test process::stack::execution::bytes::tests::test_bytes ... ok
+test process::stack::execution::serialize::tests::test_bincode ... ok
+test process::stack::execution::serialize::tests::test_serde_json ... ok
+test block::transaction::bytes::tests::test_bytes ... ok
+test block::transaction::serialize::tests::test_bincode ... ok
+test block::transaction::serialize::tests::test_serde_json ... ok
+test process::stack::inclusion::tests::test_inclusion_verify_execution ... ok
+test process::stack::inclusion::tests::test_inclusion_verify_fee ... ok
+test block::transactions::serialize::tests::test_serde_json ... ok
+test block::transactions::serialize::tests::test_bincode ... ok
+test process::tests::test_process_circuit_key ... ok
+test coinbase_puzzle::tests::test_coinbase_puzzle ... ok
+test process::deploy::tests::test_finalize_deployment ... ok
+test process::stack::fee::bytes::tests::test_bytes ... ok
+test process::stack::fee::serialize::tests::test_bincode ... ok
+test process::stack::fee::serialize::tests::test_serde_json ... ok
+test coinbase_puzzle::helpers::epoch_challenge::bytes::tests::test_bytes ... ok
+test coinbase_puzzle::tests::test_prover_solution_minimum_target has been running for over 60 seconds
+test process::tests::test_process_execute_and_finalize_increment ... ok
+test process::tests::test_process_execute_and_finalize_increment_decrement ... ok
+test process::tests::test_process_execute_mint ... ok
+test program::bytes::tests::test_bytes ... ok
+test program::closure::bytes::tests::test_closure_bytes ... ok
+test program::closure::input::parse::tests::test_input_display ... ok
+test program::closure::input::parse::tests::test_input_parse ... ok
+test program::closure::input::tests::test_input_partial_ord ... ok
+test program::closure::input::tests::test_input_type_name ... ok
+test program::closure::output::parse::tests::test_output_display ... ok
+test program::closure::output::parse::tests::test_output_parse ... ok
+test program::closure::output::tests::test_output_type_name ... ok
+test program::closure::parse::tests::test_closure_display ... ok
+test program::closure::parse::tests::test_closure_parse ... ok
+test program::closure::parse::tests::test_closure_parse_cast ... ok
+test program::closure::parse::tests::test_closure_parse_output_function ... ok
+test program::finalize::bytes::tests::test_finalize_bytes ... ok
+test program::finalize::command::decrement::tests::test_parse ... ok
+test program::finalize::command::finalize::tests::test_parse ... ok
+test program::finalize::command::increment::tests::test_parse ... ok
+test program::finalize::command::tests::test_command_bytes ... ok
+test program::finalize::command::tests::test_command_parse ... ok
+test program::finalize::input::parse::tests::test_input_display ... ok
+test program::finalize::input::parse::tests::test_input_parse ... ok
+test program::finalize::input::tests::test_input_partial_ord ... ok
+test program::finalize::input::tests::test_input_type_name ... ok
+test program::finalize::output::parse::tests::test_output_display ... ok
+test program::finalize::output::parse::tests::test_output_parse ... ok
+test program::finalize::output::tests::test_output_type_name ... ok
+test program::finalize::parse::tests::test_finalize_display ... ok
+test program::finalize::parse::tests::test_finalize_parse ... ok
+test program::finalize::parse::tests::test_finalize_parse_cast ... ok
+test program::function::bytes::tests::test_function_bytes ... ok
+test program::function::input::parse::tests::test_input_display ... ok
+test program::function::input::parse::tests::test_input_parse ... ok
+test program::function::input::tests::test_input_partial_ord ... ok
+test program::function::input::tests::test_input_type_name ... ok
+test program::function::output::parse::tests::test_output_display ... ok
+test program::function::output::parse::tests::test_output_parse ... ok
+test program::function::output::tests::test_output_type_name ... ok
+test program::function::parse::tests::test_function_display ... ok
+test program::function::parse::tests::test_function_parse ... ok
+test program::function::parse::tests::test_function_parse_cast ... ok
+test program::function::parse::tests::test_function_parse_finalize ... ok
+test program::function::parse::tests::test_function_parse_no_instruction_or_output ... ok
+test program::import::parse::tests::test_import_display ... ok
+test program::import::parse::tests::test_import_parse ... ok
+test program::import::tests::test_import_partial_ord ... ok
+test program::import::tests::test_import_type_name ... ok
+test program::instruction::bytes::tests::test_bytes ... ok
+test program::instruction::operand::parse::tests::test_operand_display ... ok
+test program::instruction::operand::parse::tests::test_operand_from_str_fails ... ok
+test program::instruction::operand::parse::tests::test_operand_parse ... ok
+test program::instruction::operand::tests::test_operand_from_literal ... ok
+test program::instruction::operand::tests::test_operand_from_register ... ok
+test program::instruction::operand::tests::test_operand_from_register_member ... ok
+test program::instruction::operation::assert::tests::test_assert_eq_fails ... ok
+test program::instruction::operation::assert::tests::test_assert_eq_succeeds ... ok
+test program::instruction::operation::assert::tests::test_assert_neq_fails ... ok
+test program::instruction::operation::assert::tests::test_assert_neq_succeeds ... ok
+test program::instruction::operation::assert::tests::test_parse ... ok
+test program::instruction::operation::call::tests::test_bytes ... ok
+test program::instruction::operation::call::tests::test_display ... ok
+test program::instruction::operation::call::tests::test_parse ... ok
+test program::instruction::operation::cast::tests::test_parse ... ok
+test program::instruction::operation::cast::tests::test_parse_cast_into_plaintext_max_operands ... ok
+test program::instruction::operation::cast::tests::test_parse_cast_into_plaintext_too_many_operands ... ok
+test program::instruction::operation::cast::tests::test_parse_cast_into_record_max_operands ... ok
+test program::instruction::operation::cast::tests::test_parse_cast_into_record_too_many_operands ... ok
+test program::instruction::operation::commit::tests::test_parse ... ok
+test program::instruction::operation::hash::tests::test_parse ... ok
+test program::instruction::operation::is::tests::test_is_eq_fails ... ok
+test program::instruction::operation::is::tests::test_is_eq_succeeds ... ok
+test program::instruction::operation::is::tests::test_is_neq_fails ... ok
+test program::instruction::operation::is::tests::test_is_neq_succeeds ... ok
+test program::instruction::operation::is::tests::test_parse ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_i128_into_i128 ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_i16_into_i16 ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_i32_into_i32 ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_i64_into_i64 ... ok
+test program::instruction::operation::test_abs_checked::test_abs_checked_i8_into_i8 ... ok
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_fails_on_invalid_operands ... ok
+test process::tests::test_process_program_id ... ok
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_i16_into_i16 ... ok
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_i128_into_i128 ... ok
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_i32_into_i32 ... ok
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_i8_into_i8 ... ok
+test process::tests::test_process_execute_call_closure has been running for over 60 seconds
+test program::instruction::operation::test_abs_wrapped::test_abs_wrapped_i64_into_i64 ... ok
+test program::instruction::operation::test_add::test_add_field_field_into_field ... ok
+test process::tests::test_process_execute_call_external_function has been running for over 60 seconds
+test program::instruction::operation::test_add::test_add_group_group_into_group ... ok
+test process::tests::test_process_execute_call_mint_public has been running for over 60 seconds
+test program::instruction::operation::test_add::test_add_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_add::test_add_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_add::test_add_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_add::test_add_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_add::test_add_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_add::test_add_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_add::test_add_scalar_scalar_into_scalar ... ok
+test program::instruction::operation::test_add::test_add_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_add::test_add_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_add::test_add_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_add::test_add_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_add::test_add_u128_u128_into_u128 ... ok
+test process::tests::test_process_execute_mint_public ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_i32_i32_into_i32 ... ok
+test process::tests::test_process_multirecords has been running for over 60 seconds
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_u32_u32_into_u32 ... ok
+test process::tests::test_process_output_operand has been running for over 60 seconds
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_bitand::test_bitand_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_bitand::test_bitand_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_bitand::test_bitand_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_bitand::test_bitand_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_bitand::test_bitand_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_bitand::test_bitand_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_bitand::test_bitand_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_bitand::test_bitand_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_bitand::test_bitand_u32_u32_into_u32 ... ok
+test process::tests::test_process_execute_call_mint_public ... ok
+test program::instruction::operation::test_bitand::test_bitand_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_bitor::test_bitor_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_bitand::test_bitand_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_bitor::test_bitor_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_bitor::test_bitor_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_bitor::test_bitor_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_bitor::test_bitor_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_bitor::test_bitor_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_bitor::test_bitor_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_bitor::test_bitor_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_add_wrapped::test_add_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_bitor::test_bitor_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_bitor::test_bitor_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_bitor::test_bitor_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_bitand::test_bitand_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_div::test_div_field_field_into_field ... ok
+test process::tests::test_process_self_caller has been running for over 60 seconds
+test program::instruction::operation::test_bitor::test_bitor_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_div::test_div_i16_i16_into_i16 ... ok
+test process::tests::test_process_output_operand ... ok
+test process::tests::test_process_self_caller ... ok
+test program::instruction::operation::test_div::test_div_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_div::test_div_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_bitxor::test_bitxor_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_div::test_div_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_div::test_div_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_div::test_div_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_div::test_div_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_div::test_div_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_div::test_div_fails_on_invalid_operands ... ok
+test process::tests::test_process_multirecords ... ok
+test process::tests::test_process_execute_call_closure ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_double::test_double_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_double::test_double_field_into_field ... ok
+test program::instruction::operation::test_double::test_double_group_into_group ... ok
+test program::instruction::operation::test_inverse::test_inverse_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_inverse::test_inverse_field_into_field ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_i128_i128_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_i16_i16_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_field_field_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_i32_i32_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_i8_i8_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_i64_i64_into_boolean ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_u16_u16_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_u32_u32_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_scalar_scalar_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_u8_u8_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_u128_u128_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_u64_u64_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_i128_i128_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_i16_i16_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_i32_i32_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_field_field_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_i8_i8_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_i64_i64_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than::test_is_greater_than_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_u16_u16_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_scalar_scalar_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_u32_u32_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_u8_u8_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_u128_u128_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_u64_u64_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_i128_i128_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_i16_i16_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_i32_i32_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_field_field_into_boolean ... ok
+test program::instruction::operation::test_is_greater_than_or_equal::test_is_greater_than_or_equal_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_i64_i64_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_i8_i8_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_u16_u16_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_u32_u32_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_u64_u64_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_u8_u8_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_scalar_scalar_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_u128_u128_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_i128_i128_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_i16_i16_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_i32_i32_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_field_field_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_i64_i64_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_i8_i8_into_boolean ... ok
+test program::instruction::operation::test_is_less_than::test_is_less_than_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_u16_u16_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_scalar_scalar_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_u32_u32_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_u128_u128_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_u8_u8_into_boolean ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_u64_u64_into_boolean ... ok
+test program::instruction::operation::test_modulo::test_modulo_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_modulo::test_modulo_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_modulo::test_modulo_u64_u64_into_u64 ... ok
+test coinbase_puzzle::tests::test_prover_solution_minimum_target ... ok
+test program::instruction::operation::test_modulo::test_modulo_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_mul::test_mul_field_field_into_field ... ok
+test program::instruction::operation::test_is_less_than_or_equal::test_is_less_than_or_equal_fails_on_invalid_operands ... ok
+test process::tests::test_process_execute_call_external_function ... ok
+test program::instruction::operation::test_modulo::test_modulo_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_mul::test_mul_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_mul::test_mul_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_mul::test_mul_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_mul::test_mul_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_mul::test_mul_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_mul::test_mul_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_mul::test_mul_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_mul::test_mul_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_mul::test_mul_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_mul::test_mul_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_mul::test_mul_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_nand::test_nand_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_neg::test_neg_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_neg::test_neg_field_into_field ... ok
+test program::instruction::operation::test_neg::test_neg_group_into_group ... ok
+test program::instruction::operation::test_neg::test_neg_i128_into_i128 ... ok
+test program::instruction::operation::test_neg::test_neg_i16_into_i16 ... ok
+test program::instruction::operation::test_neg::test_neg_i32_into_i32 ... ok
+test program::instruction::operation::test_neg::test_neg_i64_into_i64 ... ok
+test program::instruction::operation::test_mul::test_mul_group_scalar_into_group ... ok
+test program::instruction::operation::test_nor::test_nor_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_neg::test_neg_i8_into_i8 ... ok
+test program::instruction::operation::test_not::test_not_boolean_into_boolean ... ok
+test program::instruction::operation::test_not::test_not_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_not::test_not_i128_into_i128 ... ok
+test program::instruction::operation::test_not::test_not_i16_into_i16 ... ok
+test program::instruction::operation::test_not::test_not_i32_into_i32 ... ok
+test program::instruction::operation::test_not::test_not_i64_into_i64 ... ok
+test program::instruction::operation::test_not::test_not_i8_into_i8 ... ok
+test program::instruction::operation::test_not::test_not_u128_into_u128 ... ok
+test program::instruction::operation::test_not::test_not_u16_into_u16 ... ok
+test program::instruction::operation::test_not::test_not_u32_into_u32 ... ok
+test program::instruction::operation::test_not::test_not_u64_into_u64 ... ok
+test program::instruction::operation::test_not::test_not_u8_into_u8 ... ok
+test program::instruction::operation::test_mul_wrapped::test_mul_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_pow::test_pow_field_field_into_field ... ok
+test program::instruction::operation::test_nand::test_nand_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_mul::test_mul_scalar_group_into_group ... ok
+test program::instruction::operation::test_nor::test_nor_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_pow::test_pow_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_pow::test_pow_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_pow::test_pow_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_pow::test_pow_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_pow::test_pow_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_div::test_div_i128_i128_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_pow::test_pow_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_pow::test_pow_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_div::test_div_u128_u128_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_div::test_div_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_pow::test_pow_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i128_i128_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_pow::test_pow_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_pow::test_pow_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_pow::test_pow_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u128_u128_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_pow::test_pow_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_pow::test_pow_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_pow::test_pow_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_div::test_div_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_pow::test_pow_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_pow::test_pow_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_pow::test_pow_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_pow::test_pow_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_pow::test_pow_u128_u8_into_u128 ... ok
+test program::instruction::operation::test_pow::test_pow_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_pow::test_pow_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_pow::test_pow_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_pow::test_pow_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_pow::test_pow_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_pow::test_pow_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_pow::test_pow_u128_u16_into_u128 ... ok
+test program::instruction::operation::test_pow::test_pow_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_div_wrapped::test_div_wrapped_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_pow::test_pow_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_pow::test_pow_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u128_u8_into_u128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u128_u16_into_u128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_rem::test_rem_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_rem::test_rem_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_rem::test_rem_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_rem::test_rem_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_pow::test_pow_u128_u32_into_u128 ... ok
+test program::instruction::operation::test_rem::test_rem_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_rem::test_rem_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_rem::test_rem_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_rem::test_rem_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_pow_wrapped::test_pow_wrapped_u128_u32_into_u128 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_rem::test_rem_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_modulo::test_modulo_u128_u128_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_pow::test_pow_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_modulo::test_modulo_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_rem::test_rem_i128_i128_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_rem::test_rem_u128_u128_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i128_i128_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u128_u128_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_shl_checked::test_shl_checked_i128_u16_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_shl_checked::test_shl_checked_i128_u32_into_i128 has been running for over 60 seconds
+test program::instruction::operation::test_shl_checked::test_shl_checked_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_rem::test_rem_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u128_u8_into_u128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_rem::test_rem_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_rem_wrapped::test_rem_wrapped_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u128_u16_into_u128 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u128_u8_into_u128 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u128_u32_into_u128 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_shl_wrapped::test_shl_wrapped_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u128_u16_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_shl_checked::test_shl_checked_u128_u32_into_u128 has been running for over 60 seconds
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i128_u16_into_i128 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i16_u16_into_i16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i16_u32_into_i16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i16_u8_into_i16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i32_u16_into_i32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i32_u32_into_i32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i32_u8_into_i32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i128_u8_into_i128 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i64_u16_into_i64 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i8_u16_into_i8 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i8_u32_into_i8 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i64_u32_into_i64 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i64_u8_into_i64 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_i8_u8_into_i8 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u128_u16_into_u128 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u16_u32_into_u16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u16_u8_into_u16 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u32_u16_into_u32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u32_u8_into_u32 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u64_u16_into_u64 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u64_u32_into_u64 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u8_u16_into_u8 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u8_u32_into_u8 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_square::test_square_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_square::test_square_field_into_field ... ok
+test program::instruction::operation::test_square_root::test_square_root_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u64_u8_into_u64 ... ok
+test program::instruction::operation::test_square_root::test_square_root_field_into_field ... ok
+test program::instruction::operation::test_sub::test_sub_field_field_into_field ... ok
+test program::instruction::operation::test_sub::test_sub_group_group_into_group ... ok
+test program::instruction::operation::test_sub::test_sub_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_sub::test_sub_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_sub::test_sub_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_sub::test_sub_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_sub::test_sub_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_sub::test_sub_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_sub::test_sub_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_sub::test_sub_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_sub::test_sub_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_sub::test_sub_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_sub::test_sub_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_u128_u128_into_u128 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_u64_u64_into_u64 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_sub_wrapped::test_sub_wrapped_fails_on_invalid_operands ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_boolean_boolean_into_boolean ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_field_field_into_field ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_i128_u32_into_i128 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_address_address_into_address ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_i16_i16_into_i16 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_i32_i32_into_i32 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_group_group_into_group ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_i8_i8_into_i8 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_scalar_scalar_into_scalar ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_i64_i64_into_i64 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_i128_i128_into_i128 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_u16_u16_into_u16 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_u32_u32_into_u32 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_u8_u8_into_u8 ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_u64_u64_into_u64 ... ok
+test program::instruction::parse::tests::test_parse ... ok
+test program::instruction::tests::test_opcodes ... ok
+test program::mapping::bytes::tests::test_mapping_bytes ... ok
+test program::mapping::key::parse::tests::test_key_display ... ok
+test program::mapping::key::parse::tests::test_key_parse ... ok
+test program::mapping::key::tests::test_key_type_name ... ok
+test program::mapping::parse::tests::test_mapping_display ... ok
+test program::mapping::parse::tests::test_mapping_parse ... ok
+test program::mapping::value::parse::tests::test_value_display ... ok
+test program::mapping::value::parse::tests::test_value_parse ... ok
+test program::mapping::value::tests::test_value_type_name ... ok
+test program::parse::tests::test_program_display ... ok
+test program::parse::tests::test_program_parse ... ok
+test program::parse::tests::test_program_parse_function_zero_inputs ... ok
+test program::serialize::tests::test_bincode ... ok
+test program::serialize::tests::test_serde_json ... ok
+test program::instruction::operation::test_ternary::test_ternary_boolean_u128_u128_into_u128 ... ok
+test program::tests::test_program_evaluate_cast ... ok
+test program::tests::test_program_evaluate_function ... ok
+test program::tests::test_program_evaluate_record_and_function ... ok
+test program::tests::test_program_evaluate_struct_and_function ... ok
+test program::tests::test_program_function ... ok
+test program::tests::test_program_import ... ok
+test program::tests::test_program_mapping ... ok
+test program::tests::test_program_record ... ok
+test program::tests::test_program_struct ... ok
+test snark::certificate::bytes::tests::test_bytes ... ok
+test snark::certificate::parse::tests::test_display ... ok
+test snark::certificate::parse::tests::test_parse ... ok
+test snark::certificate::parse::tests::test_string ... ok
+test snark::certificate::serialize::tests::test_bincode ... ok
+test snark::certificate::serialize::tests::test_serde_json ... ok
+test snark::proof::bytes::tests::test_bytes ... ok
+test snark::proof::parse::tests::test_display ... ok
+test snark::proof::parse::tests::test_parse ... ok
+test snark::proof::parse::tests::test_string ... ok
+test snark::proof::serialize::tests::test_bincode ... ok
+test snark::proof::serialize::tests::test_serde_json ... ok
+test store::block::tests::test_find_block_hash ... ok
+test store::block::tests::test_insert_get_remove ... ok
+test store::helpers::memory_map::tests::test_atomic_writes_are_batched ... ok
+test store::helpers::memory_map::tests::test_atomic_writes_can_be_aborted ... ok
+test store::helpers::memory_map::tests::test_contains_key ... ok
+test store::helpers::memory_map::tests::test_insert_and_get_speculative ... ok
+test store::helpers::memory_map::tests::test_remove_and_get_speculative ... ok
+test store::program::tests::test_initialize_insert_remove ... ok
+test store::program::tests::test_initialize_update_remove ... ok
+test store::program::tests::test_must_initialize_first ... ok
+test store::program::tests::test_remove_key_value ... ok
+test store::program::tests::test_remove_mapping ... ok
+test store::program::tests::test_remove_program ... ok
+test store::transaction::deployment::tests::test_find_transaction_id ... ok
+test store::transaction::deployment::tests::test_insert_get_remove ... ok
+test store::transaction::execution::tests::test_find_transaction_id ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u128_u16_into_u128 ... ok
+test store::transaction::execution::tests::test_insert_get_remove ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u128_u8_into_u128 ... ok
+test store::transaction::tests::test_find_transaction_id ... ok
+test store::transaction::tests::test_insert_get_remove ... ok
+test store::transition::input::tests::test_find_transition_id ... ok
+test store::transition::input::tests::test_insert_get_remove ... ok
+test store::transition::output::tests::test_find_transition_id ... ok
+test store::transition::output::tests::test_insert_get_remove ... ok
+test store::transition::tests::test_insert_get_remove ... ok
+test vm::finalize::tests::test_finalize ... ok
+test program::instruction::operation::test_shr_checked::test_shr_checked_u128_u32_into_u128 ... ok
+test vm::verify::tests::test_verify ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u128_u32_into_u128 ... ok
+test vm::verify::tests::test_verify_execution ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u128_u16_into_u128 ... ok
+test program::instruction::operation::test_shr_wrapped::test_shr_wrapped_u128_u8_into_u128 ... ok
+test program::instruction::operation::test_shl_checked::test_shl_checked_u128_u32_into_u128 ... ok
+test program::tests::test_program_evaluate_call ... ok
+test program::instruction::operation::test_ternary::test_ternary_fails_on_invalid_operands has been running for over 60 seconds
+test program::instruction::operation::test_ternary::test_ternary_fails_on_invalid_operands ... ok
+test store::transaction::execution::tests::test_find_transaction_id_with_fee ... ok
+test store::transaction::execution::tests::test_insert_get_remove_with_fee ... ok
+test vm::verify::tests::test_verify_deployment ... ok
+test vm::verify::tests::test_verify_deploy_and_execute has been running for over 60 seconds
+test vm::verify::tests::test_verify_deploy_and_execute ... ok
+
+test result: ok. 688 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 472.30s
+
+   Doc-tests snarkvm-synthesizer
+
+running 12 tests
+test src/process/stack/inclusion/mod.rs - process::stack::inclusion::InclusionAssignment<N>::to_circuit_assignment (line 614) ... ignored
+test src/program/instruction/bytes.rs - program::instruction::bytes::Instruction<N>::read_le::instruction_from_bytes_le (line 24) ... ignored
+test src/program/instruction/bytes.rs - program::instruction::bytes::Instruction<N>::write_le::instruction_to_bytes_le (line 56) ... ignored
+test src/program/instruction/mod.rs - program::instruction::derive_from_operation (line 308) ... ignored
+test src/program/instruction/mod.rs - program::instruction::instruction (line 180) ... ignored
+test src/program/instruction/mod.rs - program::instruction::instruction (line 184) ... ignored
+test src/program/instruction/mod.rs - program::instruction::opcodes (line 326) ... ignored
+test src/program/instruction/operation/macros.rs - program::instruction::operation::macros::evaluate (line 172) ... ignored
+test src/program/instruction/operation/macros.rs - program::instruction::operation::macros::execute (line 235) ... ignored
+test src/program/instruction/operation/macros.rs - program::instruction::operation::macros::operation (line 20) ... ignored
+test src/program/instruction/operation/macros.rs - program::instruction::operation::macros::output_type (line 288) ... ignored
+test src/program/instruction/parse.rs - program::instruction::parse::Instruction<N>::parse::instruction_parsers (line 47) ... ignored
+
+test result: ok. 0 passed; 0 failed; 12 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+Running 'cargo test --features serial' in ./utilities
+
+running 20 tests
+test bititerator::tests::test_bititerator_le ... ok
+test bititerator::tests::test_bititerator_be_without_leading_zeros ... ok
+test bytes::test::test_bits_from_bytes_le ... ok
+test bititerator::tests::test_bititerator_be ... ok
+test bytes::test::test_bytes_from_bits_le ... ok
+test bytes::test::test_macro ... ok
+test bytes::test::test_macro_empty ... ok
+test serialize::impls::test::test_bool ... ok
+test serialize::impls::test::test_option ... ok
+test serialize::impls::test::test_phantomdata ... ok
+test serialize::impls::test::test_string ... ok
+test serialize::impls::test::test_tuple ... ok
+test serialize::impls::test::test_tuple_vec ... ok
+test serialize::impls::test::test_uint ... ok
+test serialize::test_number_of_bits_and_bytes ... ok
+test serialize::impls::test::test_vec ... ok
+test bytes::test::test_from_bits_le_to_bytes_le_roundtrip ... ok
+test bits::tests::test_integers ... ok
+test biginteger::tests::test_biginteger256 ... ok
+test biginteger::tests::test_biginteger384 ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.15s
+
+   Doc-tests snarkvm-utilities
+
+running 2 tests
+test src/serialize/traits.rs - serialize::traits::CanonicalSerialize (line 106) ... ok
+test src/serialize/traits.rs - serialize::traits::CanonicalDeserialize (line 144) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+
+Running 'cargo test --features serial' in ./fields
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests snarkvm-fields
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Running 'cargo test --features serial' in ./curves
+
+running 63 tests
+test bls12_377::fr::tests::test_two_adic_root_of_unity ... ok
+test bls12_377::fq::tests::test_two_adic_root_of_unity ... ok
+test bls12_377::fr::tests::test_powers_of_root_of_unity ... ok
+test bls12_377::fq::tests::test_powers_of_root_of_unity ... ok
+test bls12_377::fq6::test::test_fq2_mul_nonresidue ... ok
+test bls12_377::tests::test_fq12_mul_by_034 ... ok
+test bls12_377::tests::test_fq12_mul_by_014 ... ok
+test bls12_377::tests::test_fq2_basics ... ok
+test bls12_377::tests::test_fq2_legendre ... ok
+test bls12_377::tests::test_fq2_ordering ... ok
+test bls12_377::tests::test_fq2_mul_nonresidue ... ok
+test bls12_377::tests::test_bls12_377_fr ... ok
+test bls12_377::tests::test_fq_add_assign ... ok
+test bls12_377::tests::test_bilinearity ... ok
+test bls12_377::tests::test_fq_double_in_place ... ok
+test bls12_377::tests::test_fq6_mul_by_01 ... ok
+test bls12_377::tests::test_fq_is_half ... ok
+test bls12_377::tests::test_fq_legendre ... ok
+test bls12_377::tests::test_fq6_mul_by_1 ... ok
+test bls12_377::tests::test_fq_negate ... ok
+test bls12_377::tests::test_fq_num_bits ... ok
+test bls12_377::tests::test_fq_ordering ... ok
+test bls12_377::tests::test_fq_repr_from ... ok
+test bls12_377::tests::test_bls12_377_fq ... ok
+test bls12_377::tests::test_fq_inverse ... ok
+test bls12_377::tests::test_fq_repr_is_odd ... ok
+test bls12_377::tests::test_fq_repr_is_zero ... ok
+test bls12_377::tests::test_fq_repr_num_bits ... ok
+test bls12_377::tests::test_fq_root_of_unity ... ok
+test bls12_377::tests::test_bls12_377_fq2 ... ok
+test bls12_377::tests::test_fq_sub_assign ... ok
+test bls12_377::tests::test_fq_sum_of_products ... ok
+test bls12_377::tests::test_fq_pow ... ok
+test bls12_377::tests::test_bls12_377_fq6 ... ok
+test bls12_377::tests::test_fr_sum_of_products ... ok
+test bls12_377::tests::test_g1_generator ... ok
+test bls12_377::tests::test_g1_projective_curve ... ok
+test bls12_377::tests::test_fq_squaring ... ok
+test bls12_377::tests::test_fq_sqrt ... ok
+test bls12_377::tests::test_g1_projective_glv ... ok
+test bls12_377::tests::test_g2_generator ... ok
+test bls12_377::tests::test_g1_projective_group ... ok
+test edwards_bls12::fr::tests::test_two_adic_root_of_unity ... ok
+test edwards_bls12::tests::print_montgomery_to_weierstrass_parameters ... ignored
+test bls12_377::tests::test_g2_projective_group ... ok
+test edwards_bls12::tests::test_conversion ... ok
+test edwards_bls12::tests::test_edwards_bls12_fq ... ok
+test edwards_bls12::tests::test_edwards_bls12_fr ... ok
+test edwards_bls12::tests::test_affine_group ... ok
+test edwards_bls12::tests::test_edwards_to_montgomery_point ... ok
+test edwards_bls12::tests::test_generator ... ok
+test edwards_bls12::tests::test_montgomery_conversion ... ok
+test edwards_bls12::tests::test_isomorphism ... ok
+test edwards_bls12::tests::test_projective_group ... ok
+test edwards_bls12::tests::test_projective_curve ... ok
+test bls12_377::tests::test_bls12_377_fq12 ... ok
+test bls12_377::g1::tests::test_subgroup_membership ... ok
+test bls12_377::tests::test_g2_projective_curve ... ok
+test bls12_377::tests::test_fq_mul_assign ... ok
+test bls12_377::tests::test_fr_sqrt_tonelli ... ok
+test bls12_377::tests::test_fq_sqrt_tonelli ... ok
+test bls12_377::tests::test_fr_bench_sqrt ... ok
+test bls12_377::tests::test_fq_bench_sqrt ... ok
+
+test result: ok. 62 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 12.40s
+
+   Doc-tests snarkvm-curves
+
+running 1 test
+test src/bls12_377/fr.rs - bls12_377::fr::Fr (line 31) ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Running 'cargo test --features serial' in ./console/collections
+
+running 11 tests
+test merkle_tree::tests::append::test_profiler ... ignored
+test merkle_tree::tests::append::test_merkle_tree_depth_3_poseidon ... ok
+test merkle_tree::tests::append::test_merkle_tree_depth_3_bhp ... ok
+test merkle_tree::tests::append::test_merkle_tree_depth_4_poseidon ... ok
+test merkle_tree::tests::append::test_merkle_tree_depth_4_bhp ... ok
+test merkle_tree::tests::append::test_merkle_tree_depth_2_poseidon ... ok
+test merkle_tree::tests::append::test_merkle_tree_depth_2_bhp ... ok
+test merkle_tree::tests::append::test_merkle_tree_poseidon ... ok
+test merkle_tree::tests::append::test_merkle_tree_bhp ... ok
+test merkle_tree::tests::remove::test_merkle_tree_bhp_remove has been running for over 60 seconds
+test merkle_tree::tests::remove::test_merkle_tree_poseidon_remove has been running for over 60 seconds
+test merkle_tree::tests::remove::test_merkle_tree_poseidon_remove ... ok
+test merkle_tree::tests::remove::test_merkle_tree_bhp_remove ... ok
+
+test result: ok. 10 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 110.71s
+
+   Doc-tests snarkvm-console-collections
+
+running 1 test
+test src/merkle_tree/mod.rs - merkle_tree::MerkleTree<E,LH,PH,DEPTH>::compute_updated_tree (line 393) ... ignored
+
