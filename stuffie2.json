@@ -1,0 +1,12 @@
+{
+  "name": "Pinky",
+  "description": "A cute pink custom made stuffie.",
+  "image": "https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie2.jpg",
+  "attributes": [
+    { "trait_type": "Number Made", "value": "One of a Kind" },
+    { "trait_type": "Condition", "value": "New!" },
+    { "trait_type": "Color", "value": "Pink" },
+    { "trait_type": "Artist", "value": "Ducky Bee" },
+    { "trait_type": "Origin", "value": "Recovered from a cloud" },
+  ]
+}
