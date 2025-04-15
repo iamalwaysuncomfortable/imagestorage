@@ -1,0 +1,12 @@
+{
+  "name": "MousyBear",
+  "description": "A brown crotched mousy-bear",
+  "image": "https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie4.jpg",
+  "attributes": [
+    { "trait_type": "Number Made", "value": 2 },
+    { "trait_type": "Condition", "value": "New!" },
+    { "trait_type": "Color", "value": "Brown" },
+    { "trait_type": "Artist", "value": "Ducky Bee" },
+    { "trait_type": "Origin", "value": "Adopted from a hole in the wall" },
+  ]
+}
