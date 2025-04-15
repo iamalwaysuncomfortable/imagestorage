@@ -1,4 +1,4 @@
-"{
+'{
   "name": "Pinky",
   "description": "A cute pink custom made stuffie.",
   "image": "https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie2.jpg",
@@ -9,4 +9,4 @@
     { "trait_type": "Artist", "value": "Ducky Bee" },
     { "trait_type": "Origin", "value": "Recovered from a cloud" }
   ]
-}"
+}'
