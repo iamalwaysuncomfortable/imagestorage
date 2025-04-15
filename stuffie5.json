@@ -1,0 +1,12 @@
+{
+  "name": "PurrrPi",
+  "description": "A little purple guy",
+  "image": "https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie5.jpg",
+  "attributes": [
+    { "trait_type": "Number Made", "value": 1 },
+    { "trait_type": "Condition", "value": "New!" },
+    { "trait_type": "Color", "value": "Purple" },
+    { "trait_type": "Artist", "value": "Ducky Bee" },
+    { "trait_type": "Origin", "value": "Came in from a magical universe" },
+  ]
+}
