@@ -7,6 +7,6 @@
     { "trait_type": "Condition", "value": "New!" },
     { "trait_type": "Color", "value": "Pink" },
     { "trait_type": "Artist", "value": "Ducky Bee" },
-    { "trait_type": "Origin", "value": "Recovered from a cloud" },
+    { "trait_type": "Origin", "value": "Recovered from a cloud" }
   ]
 }
