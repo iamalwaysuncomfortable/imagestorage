@@ -7,6 +7,6 @@
     { "trait_type": "Condition", "value": "New!" },
     { "trait_type": "Color", "value": "Purple" },
     { "trait_type": "Artist", "value": "Ducky Bee" },
-    { "trait_type": "Origin", "value": "Came in from a magical universe" },
+    { "trait_type": "Origin", "value": "Came in from a magical universe" }
   ]
 }
