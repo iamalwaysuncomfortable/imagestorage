@@ -7,6 +7,6 @@
     { "trait_type": "Condition", "value": "New!" },
     { "trait_type": "Color", "value": "Brown" },
     { "trait_type": "Artist", "value": "Ducky Bee" },
-    { "trait_type": "Origin", "value": "Adopted from a hole in the wall" },
+    { "trait_type": "Origin", "value": "Adopted from a hole in the wall" }
   ]
 }
