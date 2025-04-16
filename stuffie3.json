@@ -1,12 +1,1 @@
-{
-  "name": "BooBoo",
-  "description": "A brown crotched boo boo bear.",
-  "image": "https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie3.jpg",
-  "attributes": [
-    { "trait_type": "Number Made", "value": 5 },
-    { "trait_type": "Condition", "value": "New!" },
-    { "trait_type": "Color", "value": "Brown" },
-    { "trait_type": "Artist", "value": "Ducky Bee" },
-    { "trait_type": "Origin", "value": "Adopted from the backyard" }
-  ]
-}
+"{\"name\":\"BooBoo\",\"description\":\"A brown crotched boo boo bear.\",\"image\":\"https://raw.githubusercontent.com/iamalwaysuncomfortable/imagestorage/main/stuffie3.jpg\",\"attributes\":[{\"trait_type\":\"Number Made\",\"value\":5},{\"trait_type\":\"Condition\",\"value\":\"New!\"},{\"trait_type\":\"Color\",\"value\":\"Brown\"},{\"trait_type\":\"Artist\",\"value\":\"Ducky Bee\"},{\"trait_type\":\"Origin\",\"value\":\"Adopted from the backyard\"}]}"
